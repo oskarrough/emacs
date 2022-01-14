@@ -1,1 +1,19 @@
-configuration.org
+This is just some text in org mode. If you are in Emacs, you can do S-Tab to browse.
+
+* Configuration
+
+#+begin_src emacs-lisp
+(setq make-backup-files nil)
+
+(defun config-visit()
+  "Visit the emacs config directory, to quickly access and make changes."
+  (interactive)
+  (find-file "~/.emacs.d/"))
+(global-set-key (kbd "C-c e") 'config-visit)
+
+(defun config-reload()
+  "Reload the user config, to get the latest saved changes"
+  (interactive)
+  (load user-init-file))
+(global-set-key (kbd "C-c r") 'config-reload)
+#+end_src

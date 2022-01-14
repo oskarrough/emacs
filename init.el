@@ -1,2 +1,2 @@
 (require 'org)
-(org-babel-load-file "./configuration.org")
+(org-babel-load-file "./readme.org")

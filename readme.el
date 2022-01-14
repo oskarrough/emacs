@@ -1,8 +1,3 @@
-This is just some text in org mode. If you are in Emacs, you can do S-Tab to browse.
-
-* Configuration
-
-#+begin_src emacs-lisp
 (setq make-backup-files nil)
 
 (defun config-visit()
@@ -16,4 +11,3 @@ This is just some text in org mode. If you are in Emacs, you can do S-Tab to bro
   (interactive)
   (load user-init-file))
 (global-set-key (kbd "C-c r") 'config-reload)
-#+end_src
